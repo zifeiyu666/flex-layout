@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.HolyGrail {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.HolyGrail-body {
+  display: flex;
+  flex: auto;
+}
+.HolyGrail-nav {
+  flex: 0 0 140px;
+  background-color: #eee;
+  order: -1;
+}
+.HolyGrail-content {
+  flex: auto;
+  order: 0;
+}
+.HolyGrail-ads {
+  flex: 0 0 140px;
+  background-color: #eee;
+  order: 1;
+}
+
+
+@media (max-width: 768px) {
+  .HolyGrail-body {
+    flex-direction: column;
+    flex: 1;
+  }
+  .HolyGrail-nav,
+  .HolyGrail-ads,
+  .HolyGrail-content {
+    flex: auto;
+  }
+}
+
+
+header,footer {
+  flex: 0 0 80px;
+  background-color: #ccc;
+}

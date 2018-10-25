@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>media-layout</title>
+</head>
+<body>
+  <div class='Grid'>
+    <div class="Grid-img">
+      <img src="icon.png" alt="">
+    </div>
+    <div class="Grid-content">
+      <h3>This is a title</h3>
+      <p> there are some content.fthere are some content.there are some content.</p>
+    </div>
+  </div>
+  <div class='Grid'>
+    <div class="Grid-content">
+      <h3>This is a title</h3>
+      <p> there are some content.fthere are some content.there are some content.</p>
+    </div>
+    <div class="Grid-img">
+      <img src="icon.png" alt="">
+    </div>
+  </div>
+  <div class='Grid'>
+    <div class="Grid-content">
+      <h3>This is a title</h3>
+      <p> 
+        there are some content.fthere are some content.there are some content.
+        there are some content.fthere are some content.there are some content.
+        there are some content.fthere are some content.there are some content.
+      </p>
+    </div>
+    <div class="Grid-img center-img">
+      <img src="icon.png" alt="">
+    </div>
+  </div>
+  <div class='Grid'>
+    <div class="Grid-img bottom-img">
+      <img src="icon.png" alt="">
+    </div>
+    <div class="Grid-content">
+      <h3>This is a title</h3>
+      <p> 
+        there are some content.fthere are some content.there are some content.
+        there are some content.fthere are some content.there are some content.
+        there are some content.fthere are some content.there are some content.
+      </p>
+    </div>
+  </div>
+</body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .Grid {
+    display: flex;
+    width: 300px;
+    border:1px solid #eee;
+    padding: 20px;
+    margin:20px;
+  }
+  .Grid-img{
+    flex: 0 0 30px;
+    padding:5px;
+    margin: 5px;
+  }
+  .Grid-img img {
+    width: 100%;
+  }
+  .Grid-content {
+    padding:5px;
+    margin: 5px;
+    flex: auto;
+  }
+  .center-img {
+    align-self: center;
+  }
+  .bottom-img {
+    align-self: flex-end;
+  }
+</style>
+</html>

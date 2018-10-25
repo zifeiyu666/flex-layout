@@ -1,0 +1,23 @@
+.Grid {
+  display: flex
+}
+.Grid-cell {
+  background-color: #ccc;
+  padding: 10px;
+  margin:10px;
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+}
+
+.Grid-cell.u-lof2 {
+  flex: 0 0 50%;
+}
+
+.Grid-cell.u-lof3 {
+  flex: 0 0 33.333333%;
+}
+
+.Grid-cell.u-lof4 {
+  flex: 0 0 25%;
+}

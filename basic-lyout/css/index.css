@@ -1,0 +1,11 @@
+.Grid {
+  display: flex;
+}
+.Grid-cell {
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0%; 
+  padding: 10px;
+  margin: 10px;
+  background-color: #ddd;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input-layout</title>
+</head>
+<body>
+  <div class="Grid">
+    <span>Hi</span>
+    <input type="text">
+    <span>Go</span>
+  </div>
+  <div class="Grid">
+    <input type="text">
+    <span>Go</span>
+  </div>
+  <div class="Grid">
+    <span>Hi</span>
+    <input type="text">
+  </div>
+</body>
+<style>
+  .Grid {
+    display: flex;
+    width: 200px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+  }
+  .Grid span{
+    flex: 0 0 40px;
+    background-color: #eee;
+    text-align: center;
+  }
+  input {
+    flex: 1;
+    border: none;
+  }
+</style>
+</html>
